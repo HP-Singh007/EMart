@@ -78,7 +78,7 @@ function App() {
   },[isAuthenticated]);
 
   return (
-    <Router basename="/E-Mart">
+    <Router basename="/EMart">
       <Loader/>
       <Routes>
       <Route path="/" element={<Home />} />
