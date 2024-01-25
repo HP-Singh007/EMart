@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/EMart/static/css/main.444dfe1b.css",
-    "main.js": "/EMart/static/js/main.db36bfad.js",
+    "main.js": "/EMart/static/js/main.7d32842b.js",
     "static/media/bg3.jpg": "/EMart/static/media/bg3.56de5c386ef50968fc58.jpg",
     "static/media/bg.jpg": "/EMart/static/media/bg.31813b3b63de017d8fad.jpg",
     "static/media/404.png": "/EMart/static/media/404.cb99954c86db74d62cf6.png",
@@ -10,10 +10,10 @@
     "static/media/logo2.png": "/EMart/static/media/logo2.d85a72fbf0bfffc357e3.png",
     "index.html": "/EMart/index.html",
     "main.444dfe1b.css.map": "/EMart/static/css/main.444dfe1b.css.map",
-    "main.db36bfad.js.map": "/EMart/static/js/main.db36bfad.js.map"
+    "main.7d32842b.js.map": "/EMart/static/js/main.7d32842b.js.map"
   },
   "entrypoints": [
     "static/css/main.444dfe1b.css",
-    "static/js/main.db36bfad.js"
+    "static/js/main.7d32842b.js"
   ]
 }
