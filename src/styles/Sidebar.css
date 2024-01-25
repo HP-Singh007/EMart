@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+.sidebar{
+    /* position:fixed; */
+    /* top:0px; */
+    /* margin:0px 2px; */
+    min-height:100vh;
+    width:15%;
+    z-index: 90;
+    background-color: rgb(244, 244, 253);
+    padding:30px 10px;
+}
+.side{
+    padding:20px 0px;
+    margin:10px;
+}
+.sidebar h2{
+    text-align: center;
+    text-decoration: underline;
+}
+.sideComp{
+    font-size:1.5vw;
+    color:purple;
+}
+
+#categorySidebar ul{
+    padding:0px;
+}
+
+#categorySidebar li{
+    list-style:none;
+    font-size:1.1vw;
+    padding:8px;
+    margin:2px;
+    /* border:1px solid red; */
+    background-color: lavender;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+}
+
+#categorySidebar li:hover{
+    transform: scale(1.2);
+    color:black;
+    cursor: pointer;
+}

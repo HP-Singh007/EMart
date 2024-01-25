@@ -1,0 +1,33 @@
+#orderItem{
+    display: flex;
+    background-color: rgb(254, 254, 255);
+    margin:0px;
+    height:200px;
+}
+#orderItemImg{
+    width:20% !important;
+    margin: 0px !important;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#orderItem img{
+    width:100%;
+    object-fit: contain;
+}
+#orderItemName{
+    width:50% !important;
+    text-align: center;
+    margin: 0px !important;
+    padding:20px 0px;
+}
+#orderItemQuantity{
+    width:30% !important;
+    text-align: center;
+    margin: 0px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

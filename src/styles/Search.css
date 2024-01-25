@@ -1,0 +1,30 @@
+#search{
+    margin:20px 0px 60px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:50%;
+}
+#search input{
+    width:90%;
+    height: 90%;
+    font-size: 1.5vw;
+    padding:8px;
+    outline: none;
+    border: 1px solid teal;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    color:purple;
+}
+#searchIcon{
+    background-color: teal;
+    width:10%;
+    height:90%;
+    padding:10px;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    color:lavender;
+    cursor: pointer;
+}

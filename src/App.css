@@ -1,0 +1,20 @@
+body{
+    margin:0;
+    background-color: lavender;
+}
+
+.btnDisabled{
+    pointer-events: none !important;
+    background-color:rgba(128, 128, 128, 0.436) !important;
+}
+
+.activeCategory{
+    border:3px solid black !important;
+}
+
+.success{
+    color:green;
+}
+.warning{
+    color:red;
+}

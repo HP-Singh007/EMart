@@ -1,0 +1,91 @@
+.userPage{
+    display:flex;
+    flex-direction: column;
+    min-height: 90vh;
+    width:100%;
+    align-items: center;
+    justify-content: flex-start;
+    background-image: url(../images/bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.userCard{
+    margin-top:60px;
+    width:70%;
+    border: 1px solid teal;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding:50px;
+    background-color: rgba(240, 248, 255, 0.482);
+    border-radius: 20px;
+}
+
+.userCardLeft{
+    width:30%;
+}
+.userCardLeft img{
+    width:200px;
+    height:200px;
+    object-fit: cover;
+    border-radius: 1000px;
+}
+#updateAvatar{
+    margin:30px 0px;
+}
+#updateAvatar img{
+    width:15%;
+    height:fit-content;
+    object-fit: cover;
+    margin:2%;
+}
+#updateAvatar input{
+    width:80%;
+}
+.userCardRight{
+    width:70%;
+    font-size: 2vw;
+}
+.userCardRight p{
+    display: inline;
+    color:teal;
+    font-weight: 500;
+}
+.userCardRight input{
+    color:teal;
+    font-weight: 500;
+    background-color: rgb(240, 248, 255);
+    border: 0px;
+    outline: none;
+    margin:2px;
+    margin-bottom: 15px;
+    padding:2px 10px;
+    width:100%;
+    border-radius: 20px;
+}
+.userPage button{
+    margin:40px 0px;
+    background-color: teal;
+    padding:10px;
+    color:lavender;
+    border-radius: 20px;
+    border: 0px;
+    outline: none;
+}
+#UserBtn{
+    margin:10px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.userCardRight a{
+    text-decoration: none;
+    color:lavender;
+    background-color: teal;
+    margin:30px;
+    padding:10px;
+    font-size: 1.2vw;
+    border-radius: 20px;
+}

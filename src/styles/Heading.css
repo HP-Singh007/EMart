@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+#heading{
+    display: flex;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.5vw;
+}
+.line{
+    width:35%;
+    border:1px solid black;
+    height:0px;
+}

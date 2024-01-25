@@ -1,0 +1,169 @@
+#singleProduct{
+    background-color: lavender;
+}
+#upperHalfDetails{
+    display:flex;
+    min-height:580px;
+    width:100%;
+    overflow: hidden;
+}
+#carousel{
+    width:35%;
+    padding:0px 20px 0px 0px;
+}
+.carouselImg{
+    margin:20px;
+    margin-right: 0px;
+    object-fit:contain;
+    width:90%;
+    height:90%;
+    /* border: 1px solid black; */
+}
+
+#productInfo{
+    padding:50px 10px 0px 10px;
+    width:65%;
+}
+#productInfo h1{
+    font-weight:lighter;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3vw;
+    text-align: left;
+    color:rgb(24, 24, 68)
+}
+#productInfo p{
+    margin:5px 10px;
+}
+
+#productRatings{
+    display: flex;
+    align-items: center;
+}
+#newPrice{
+    display: flex;
+    align-items: center;
+}
+
+.largeFont{
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+.smallFont{
+    font-size: 1.2vw;
+    font-weight: 100;
+    color:grey;
+    text-decoration: line-through;
+}
+.greenFont{
+    font-size: 1.5vw;
+    color:red;
+}
+
+#stock{
+    margin:20px 0px;
+    font-size: 1.5vw;
+}
+#stock p{
+    font-family: 'Times New Roman', Times, serif;
+    margin:0px;
+}
+
+#cart{
+    display: flex;
+    align-items: center;
+    height:50px;
+    margin:10px 0px;
+}
+
+.updateInput{
+    width:40px;
+    font-size: 1.3vw;
+    padding:5px;
+    height:100%;
+    text-align: center;
+}
+.updateStock{
+    height:100%;
+    font-size: 1.3vw;
+    padding:5px 12px;
+    border: 0px;
+    background-color: teal;
+    color: lavender;
+}
+.addToCart{
+    margin:0px 50px;
+    padding:10px;
+    color:white;
+    background-color: red;
+    border: 0px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.addToCart:disabled{
+    background-color:gray;
+    cursor: not-allowed;
+}
+
+#specifications{
+    background-color: rgb(236, 236, 255);
+    margin:40px 10px 40px 0px;
+    padding:10px;
+    text-align: justify;
+    font-size:1.2vw;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#reviewInfo{
+    padding:20px;
+}
+#createReview{
+    display: flex;
+    flex-direction: column;
+}
+#createReview h2{
+    margin:0px;
+}
+#createReview input{
+    min-height: 100px;
+    margin:0px 15px;
+    border-radius: 20px;
+    border:0px;
+    padding:10px;
+    font-size: 1.2vw;
+}
+#reviewbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px;
+}
+#createReview button{
+    width:8vw;
+    height:50px;
+    margin: 0px 50px;
+    background-color: rgb(29, 29, 174);
+    color:white;
+    transition: all 0.2s ease-in-out 0s;
+    border:0px;
+    border-radius: 20px;
+}
+#createReview button:hover{
+    transform: scale(1.05);
+    background-color: blueviolet;
+    cursor: pointer;
+}
+#allReviews{
+    margin-top: 30px;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  appearance: textfield;
+}

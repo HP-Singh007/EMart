@@ -1,0 +1,89 @@
+#registerPage{
+    margin:0px;
+    height:100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.53),rgba(0, 0, 0, 0.481)),url(../images/bg.jpg);
+    filter:blur(3px);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+#registerForm{
+    position:absolute;
+    top:23%;
+    width:30%;
+    height:65%;
+    margin: 0px 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(230, 230, 250, 0.558);
+    border-radius: 20px;
+}
+
+.registerDiv{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width:70%;
+    margin:10px;
+    padding:10px;
+    border-radius: 30px;
+}
+
+#registerForm input{
+    padding:0px 15px;
+    width:90%;
+    height:100%;
+    border:0px;
+    outline: none;
+    font-size: 1.2vw;
+}
+#forgetPassword{
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+}
+#forgetPassword>a{
+    text-decoration: none;
+    color:purple;
+    font-size: 1.1vw;
+}
+
+#registerForm button{
+    width:65%;
+    padding:10px;
+    margin:10px;
+    font-size: 1vw;
+    background-color: rgba(0, 2, 103, 0.74);
+    color:white;
+    border-radius: 20px;
+    border:0px;
+}
+#registerForm button:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 140);
+}
+
+.disabled{
+    pointer-events: none;
+    display: none;
+}
+
+.registerImgDiv{
+    width:70%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.registerImgDiv img{
+    width:4vmax;
+    height:4vmax;
+    border-radius: 1000px;
+    object-fit: cover;
+}
+.registerImgDiv input{
+    width:80%;
+    height:fit-content !important;
+}

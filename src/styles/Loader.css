@@ -1,0 +1,39 @@
+#Loading{
+    position:fixed;
+    width:100%;
+    min-height:100vh;
+    background-color: rgba(211, 211, 255, 0.785);
+    z-index:100000;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#ring{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    animation: ring 1s linear 0s infinite forwards normal;
+    transition: all 0.5s;
+  }
+  @keyframes ring {
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px teal;
+    }
+    25%{
+        transform: rotate(90deg);
+        box-shadow: 1px 5px 2px rgb(0, 86, 86);
+    }
+    50%{
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px rgb(0, 85, 85);
+    }
+    75%{
+        transform: rotate(270deg);
+        box-shadow: 1px 5px 2px rgb(0, 164, 164);
+    }
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px teal;
+    }
+  }

@@ -1,0 +1,101 @@
+#myOrdersPage{
+    width:100%;
+    min-height: 90vh;
+    background-color: lavender;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Collapsible{
+    width:95%;
+    margin:5px 2.5%;
+}
+#orderHeading{
+    width:90%;
+    margin:5px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding:10px;
+    border-radius: 15px;
+}
+#orderHeading>div{
+    border-right: 1px solid blue;
+    font-size: 1.2vw;
+    font-weight: 1000;
+}
+#orderRoot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(213, 213, 255);
+    padding:10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.orderId{
+    flex:1;
+}
+.orderRest{
+    flex:0.5
+}
+#orderCollapse{
+    display: flex;
+    width:100%;
+    margin-bottom: 10px;
+    justify-content: center;
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#orderCollapseLeft{
+    flex:2;
+    padding:10px;
+    width:60%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#orderCollapseProduct{
+    display: flex;
+    background-color: #2fffcb4f;
+    margin:5px;
+}
+#orderCollapseProduct>div{
+    flex:0.7;
+    font-weight: 500;
+    padding:0px 10px;
+}
+#orderCollapseProduct>span{
+    flex:1.2;
+    font-weight: 500;
+    padding:0px 10px;
+    color:#5f00f7;
+    font-family:sans-serif;
+}
+#orderCollapseProduct>p{
+    flex:0.35;
+    margin:0;
+}
+#orderCollapseRight{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex:1;
+    padding:10px;
+    width:40%;
+    border-left: 1px solid rgb(173, 173, 250);
+}
+
+.succeeded{
+    color:green;
+    font-weight: 500;
+}
+
+.Shipped{
+    color:red;
+    font-weight: 500;
+}
+
+.Delivered{
+    color:green;
+    font-weight: 500;
+}

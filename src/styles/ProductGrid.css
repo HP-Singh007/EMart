@@ -1,0 +1,35 @@
+.productgrid{
+    /* position:relative; */
+    /* top:80px; */
+    /* left:15%; */
+    width:88%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:15px 0px;
+}
+
+#grid{
+    display:grid;
+    width:90%;
+    min-height:100vh;
+    grid-template-columns: repeat(4,1fr);
+    gap:30px;
+    justify-content: space-around;
+}
+#pagination{
+    margin-top:50px;
+}
+#emptyGrid{
+    width:90%;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 2vw;
+    color:teal;
+}
+#emptyGrid img{
+    width:30%;
+}

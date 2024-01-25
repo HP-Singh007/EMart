@@ -1,0 +1,52 @@
+#productCard{
+    /* width:25%; */
+    height:400px;
+    background-color: white;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding:10px;
+    transition:all 0.2s ease-in-out 0s
+}
+#productCard:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px 20px rgb(191, 191, 243);
+}
+.links{
+    text-decoration: none;
+    color:black;
+}
+
+#productCard img{
+    width:100%;
+    height:62%;
+    object-fit: contain;
+}
+#productCard p{
+    text-align: center;
+    margin:2px;
+}
+
+#productCard #name{
+    font-size: 1.8vw;
+    height:11%;
+    overflow: hidden;
+}
+#productCard #rating{
+    width:100%;
+}
+#productCard #price{
+    font-size: 1.3vw;
+    margin-top: 0px;
+}
+#productCard #Originalprice{
+    font-size: 1vw;
+    text-decoration: line-through;
+    color:gray;
+    margin:0px;
+}
+#productCard #discount{
+    color:green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2vw;
+    font-weight: 500px;
+}

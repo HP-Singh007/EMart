@@ -1,0 +1,31 @@
+#reviewCard{
+    display: flex;
+    margin:20px;
+    border-radius: 10px;
+}
+#reviewCardLeft{
+    width:10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(190, 190, 252, 0.777);
+    padding:20px;
+}
+#reviewCardLeft p{
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+}
+#reviewCardRight{
+    padding: 20px;
+    width:85%;
+    background-color: rgba(206, 206, 255, 0.777);
+}
+#reviewCardDel{
+    width:5%;
+    background-color: rgba(206, 206, 255, 0.777);
+    text-align:right ;
+    padding:10px;
+    cursor: pointer;
+}

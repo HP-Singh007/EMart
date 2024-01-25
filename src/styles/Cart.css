@@ -1,0 +1,72 @@
+#cartPage{
+    width:100%;
+    min-height:90vh;
+    background-color: lavender;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+#cartMid{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width:100%;
+    margin:20px 0px;
+}
+#cartCard{
+    width:70%;
+}
+#cartRemoveBtn{
+    color:white;
+    background-color: red;
+    padding:5px 7px;
+    border:0px;
+    border-radius: 5px;
+}
+#subtotal{
+    background-color: white;
+    width:20%;
+    padding:20px;
+    font-size: 1.2vw;
+    margin:10px 0px;
+}
+#subtotal a{
+    padding:7px;
+    margin:5px;
+    color:white;
+    background-color: teal;
+    border: 0px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+#subtotal button{
+    padding:7px;
+    margin:5px;
+    color:white;
+    background-color: orangered;
+    border: 0px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+#emptyCart{
+    width:70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:70vh;
+    font-size: 2vw;
+}
+#emptyCart span{
+    font-size: 10vw;
+    color:teal;
+}
+#emptyCart a{
+    text-decoration: none;
+    background-color: red;
+    color:white;
+    padding:0.5vw 1vw;
+    border:0px;
+    border-radius: 10px;
+}

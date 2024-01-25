@@ -1,0 +1,28 @@
+#categoryCard{
+    display:flex;
+    flex-direction: column;
+    height:9vw;
+    width:9vw;
+    margin:2vw;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 1000px;
+    border:1px solid white;
+    transition: all 0.2s ease-in-out 0s;
+}
+#categoryCard:hover{
+    transform: scale(1.02);
+    border:1px solid teal;
+    cursor:pointer;
+}
+#categoryCard img{
+    height:60%;
+    object-fit: contain;
+    margin:10px 0px 0px 0px;
+}
+#categoryCard p{
+    height:40%;
+    font-size: 1.2vw;
+    text-align: center;
+    margin:0px;
+}

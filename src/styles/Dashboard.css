@@ -1,0 +1,92 @@
+.dashSidebar{
+    background-color:rgba(201, 201, 201, 0.263) !important;
+}
+#dashboardSidebar a{
+    text-decoration: none;
+    color:black;
+}
+
+.MuiTreeItem-label{
+    margin:15px;
+}
+.MuiCollapse-root{
+    color:black;
+}
+#adminDash{
+    color:black !important;
+}
+
+.adminPage{
+    background:linear-gradient(rgb(247, 247, 253),lavender);
+    display: flex;
+}
+
+.dashboardCardBlock{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#dash1{
+    background: linear-gradient(#fc466b 0%,#3f5efb 100%);
+}
+#dash2{
+    background: linear-gradient(#38ef7d 0%,#11998e 100%);
+}
+#dash3{
+    background: linear-gradient(#ff6a00 0%,#ee0979 100%);
+}
+#dash4{
+    background: linear-gradient(#dce35b 0%,#45b649 100%);
+}
+
+.dashboardCard{
+    background-repeat: no-repeat;
+    color:white;
+    width:20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:25px;
+    font-size: 1.5vw;
+    border-radius: 20px;
+}
+.dashboardCard>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dashboardCard svg{
+    font-size: 4vw;
+}
+.dashboardCard span{
+    font-size: 3vw;
+}
+
+#chartBlock{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 80px;
+}
+
+#barChart{
+    width:55%;
+}
+#pieChart{
+    width:25%;
+}
+#dashGrid{
+    margin-top: 70px;
+}
+#dashGrid .MuiDataGrid-root{
+    margin:20px;
+}
+
+#dashGrid .MuiDataGrid-virtualScroller{
+    background-color: rgba(53, 162, 235, 0.164);
+}
+#dashGrid .css-yrdy0g-MuiDataGrid-columnHeaderRow{
+    background-color: #0a0074ac;
+    color:white;
+}

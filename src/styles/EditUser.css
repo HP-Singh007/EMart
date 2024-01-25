@@ -1,0 +1,27 @@
+.userPageAdmin{
+    background: rgb(200, 200, 231) !important;
+}
+#updateRoleBtn{
+    display: flex;
+    height:3vw;
+    align-items: center;
+    justify-content: left;
+    margin:20px;
+}
+#updateRoleBtn>select{
+    height:100%;
+    margin:0px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+#updateRoleBtn>button{
+    height:100%;
+    border-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 1.2vw;
+}
+#updateRoleBtn>button:disabled{
+    background-color: gray;
+    cursor: not-allowed;
+}

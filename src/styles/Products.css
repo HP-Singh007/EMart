@@ -1,0 +1,26 @@
+.productPage{
+    background-color: lavender;
+}
+#productpagemid{
+    display:flex;
+    /* padding-bottom: 20vh; */
+    width:100%;
+    /* min-height:300vh; */
+}
+
+#topdeals{
+    width:70%;
+    margin:50px auto;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:50px;
+    justify-content: space-around;
+}
+
+#categoryList{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width:100%;
+    background-color: rgba(0, 0, 255, 0.047);
+}
