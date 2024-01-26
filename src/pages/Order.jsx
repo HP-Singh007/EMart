@@ -18,7 +18,7 @@ const Order = () => {
     const [pin,setPin] = useState("");
 
     const shippingInfoHandler=()=>{
-        if(phone.length!=10){
+        if(phone.length!==10){
             return toast.error("Phone number must be of 10 digits");
         }
         if(address===""){

@@ -24,3 +24,14 @@
     width:100%;
     background-color: rgba(0, 0, 255, 0.047);
 }
+
+@media screen and (max-width:630px) {
+    #topdeals{
+        width:90%;
+        margin:30px auto;
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:10px;
+        justify-content: space-around;
+    }
+}

@@ -63,6 +63,13 @@
     font-size: 3vw;
 }
 
+#dash3 span{
+    font-size: 2vw !important;
+}
+#dash4 span{
+    font-size: 2vw !important;
+}
+
 #chartBlock{
     display: flex;
     justify-content: space-around;

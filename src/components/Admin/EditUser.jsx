@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import '../../styles/EditUser.css'
 import Navbar2 from '../Product Grid/Navbar2'
-import { Link, useNavigate, useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import axios from 'axios'
 import Heading from '../Product Grid/Heading'
 import toast from 'react-hot-toast'

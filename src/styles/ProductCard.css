@@ -50,3 +50,29 @@
     font-size: 1.2vw;
     font-weight: 500px;
 }
+
+@media screen and (max-width:630px) {
+    #productCard{
+        height:200px;
+    }
+    #productCard img{
+        height:50%;
+    }
+    #productCard #name{
+        font-size: 2.2vw;
+        height:15%;
+        overflow: hidden;
+    }
+    #productCard #rating svg{
+        width: 10px;
+    }
+    #productCard #price{
+        font-size: 2.5vw;
+    }
+    #productCard #Originalprice{
+        font-size: 2vw;
+    }
+    #productCard #discount{
+        font-size: 2vw;
+    }
+}

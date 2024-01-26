@@ -37,3 +37,16 @@
     background-color: lavender;
     color:black
 }
+
+
+@media screen and (max-width:630px) {
+    #introLine{
+        font-size: 4vw;
+    }
+    #introLine p{
+        width:65%;
+    }
+    #introLine a{
+        width:40%;
+    }
+}

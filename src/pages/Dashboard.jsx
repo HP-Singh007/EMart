@@ -174,14 +174,20 @@ const Dashboard = () => {
             <div className="dashboardCard" id="dash3">
               <div>
                   <CalendarMonthIcon/>
-                  <span>&#8377;{monthEarning}</span>
+                  <span>{monthEarning.toLocaleString('en-IN',{
+                    style:'currency',
+                    currency:'INR'
+                  })}</span>
                 </div>
                 <p>This Month</p>
               </div>
             <div className="dashboardCard" id="dash4">
               <div>
                   <AccountBalanceIcon/>
-                  <span>&#8377;{totalEarning}</span>
+                  <span>{totalEarning.toLocaleString('en-IN',{
+                    style:'currency',
+                    currency:"INR"
+                  })}</span>
                 </div>
                 <p>Total Earning</p>
               </div>

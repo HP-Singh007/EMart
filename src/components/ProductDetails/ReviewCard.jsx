@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import avatar from "../../images/avatar.png";
 import "../../styles/ReviewCard.css";
 import { Rating } from "react-simple-star-rating";

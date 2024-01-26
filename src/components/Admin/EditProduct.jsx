@@ -51,13 +51,6 @@ const EditProduct = () => {
     e.preventDefault();
     try{
         submitBtn.current.disabled = true;
-        // let image = [];
-        // if(images.length===0){
-        //   image = product.images;
-        // }
-        // else{
-        //   image = images;
-        // }
 
         const {data} = await axios.put(`${server}/products/${id}`,{
             name,

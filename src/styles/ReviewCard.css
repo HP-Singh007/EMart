@@ -29,3 +29,27 @@
     padding:10px;
     cursor: pointer;
 }
+
+@media screen and (max-width:630px) {
+    #reviewCard{
+        margin:10px 5px;
+    }
+    #reviewCardLeft{
+        width:25%;
+        padding:10px;
+    }
+    #reviewCardLeft p{
+        font-size: 2.5vw;
+    }
+    #reviewCardLeft img{
+        width:50%;
+    }
+    #reviewCardRight{
+        padding: 10px;
+        width:75%;
+    }
+    #reviewCardRight p{
+        font-size: 3vw;
+    }
+    
+}

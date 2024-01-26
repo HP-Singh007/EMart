@@ -26,3 +26,18 @@
     text-align: center;
     margin:0px;
 }
+@media screen and (max-width:630px) {
+    #categoryCard{
+        height:13vw;
+        width:13vw;
+        margin:0.5vw;
+    }
+    #categoryCard img{
+        height:45%;
+        margin:10px 0px 0px 0px;
+    }
+    #categoryCard p{
+        height:55%;
+        font-size: 1.8vw;
+    }
+}

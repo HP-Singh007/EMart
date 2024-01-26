@@ -101,3 +101,21 @@
 #logoutDropdown{
     color:red;
 }
+
+@media screen and (max-width:630px) {
+    .navbar2{
+        font-weight: bold;
+        font-size: 3vw;
+        height:50px;
+    }
+    #leftnavcomp2{
+        width:15%;
+    }
+    
+    #leftnavcomp2 img{
+        object-position: -8px;
+    }
+    .dropdownitem p{
+        font-size: 3.2vw;
+    }
+}
