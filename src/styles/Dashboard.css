@@ -97,6 +97,7 @@
     background-color: #0a0074ac;
     color:white;
 }
+
 @media screen and (max-width:630px) {
     .dashSidebar{
         width:22%;
