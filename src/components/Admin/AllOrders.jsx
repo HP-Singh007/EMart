@@ -68,7 +68,7 @@ const AllOrders = () => {
         <Sidebar />
         <div className="adminMain">
             <Heading heading={"All Orders"}/>
-            <div id="orderHeading">
+            <div id="orderHeading" className='AdminOrderHeading'>
               <div className='orderId'>Order ID</div>
               <div className='orderRest'>Item Qty</div>
               <div className='orderRest'>Payment Status</div>

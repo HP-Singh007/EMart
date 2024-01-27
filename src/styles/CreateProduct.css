@@ -39,3 +39,14 @@
     object-fit: contain;
     margin:2px;
 }
+@media screen and (max-width:630px) {
+    #createProductForm{
+        width:90%;
+    }
+    #createProductForm>input,select,textarea{
+        font-size: 3vw;
+    }
+    #createProductForm>textarea{
+        height:200px;
+    }
+}

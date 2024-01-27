@@ -108,14 +108,36 @@
         font-size: 3vw;
         height:50px;
     }
+    .navbar2 a:hover{
+        transform: scale(1);
+    }
     #leftnavcomp2{
-        width:15%;
+        width:12%;
     }
     
     #leftnavcomp2 img{
         object-position: -8px;
     }
     .dropdownitem p{
+        font-size: 4vw;
+    }
+    #midnavcomp2 a{
+        padding:10px 1.8vw;
+        text-decoration: none;
+        color:rgb(255, 255, 255);
+        font-size: 2.8vw;
+    }
+    #rightnavcomp2 svg{
+        width:5vw;
+    }
+    #rightnavcomp2 button{
+        padding:5px;
+    }
+    #dropdownName{
         font-size: 3.2vw;
+        margin:3px;
+    }
+    #dropdownName span{
+        margin:6px 5px;
     }
 }

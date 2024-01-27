@@ -44,4 +44,43 @@
 #cartPrice p{
     margin:5px;
 }
+@media screen and (max-width:630px) {
+    #cartInfo h3{
+        font-size: 3vw;
+        margin:0;
+    }
+    #cartInfo{
+        padding:0px;
+    }
+    #cartInfo>p{
+        font-size: 2vw;
+        margin:2px;
+    }
+    #cartPrice{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top:5px;
+    }
+    #cartQuantity{
+        padding:0px;
+        width:80%;
+    }
+    #cartQuantity .updateStock{
+        padding: 2px 5px;
+    }
+    #cartQuantity input{
+        padding: 1.8px 5px;
+    }
+    #cartNewPrice{
+        width:80%;
+        font-size: 3vw;
+    }
+    #cartButton{
+        width:80%;
+        font-size: 2vw;
+        display: flex;
+        justify-content: center;
+    }
+}
 

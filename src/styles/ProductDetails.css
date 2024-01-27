@@ -171,63 +171,66 @@ input[type=number] {
 @media screen and (max-width:630px) {
     #upperHalfDetails{
         min-height:400px;
+        flex-direction: column;
     }
     #carousel{
-        height:200px;
-        width: 35%;
+        height:240px;
+        width: 100%;
+        padding: 0px;
     }
     .css-ohwg9z{
-        height: 200px;
+        height: 240px;
+    }
+    .css-1f8sh1y{
+        height: 100% !important;
     }
     .carouselImg{
-        margin:10px;
-        margin-right: 0px;
-        width:90%;
-        height:50%;
-        /* border: 1px solid black; */
+        margin:0px 20px;
+        margin-top: 20px;
+        height:200px;
     }
     #productInfo{
-        padding:50px 8px 0px 8px;
-        width:65%;
+        padding:20px 8px 0px 8px;
+        width:100%;
     }
     #productInfo h1{
-        font-size: 5vw;
+        font-size: 6vw;
     }
     .largeFont{
-        font-size: 3.5vw;
+        font-size: 5.5vw;
     }
     .smallFont{
-        font-size: 2.2vw;
+        font-size: 4.2vw;
     }
     .greenFont{
-        font-size: 2.5vw;
+        font-size: 4.5vw;
     }
     #stock{
         margin:10px 0px;
-        font-size: 3vw;
+        font-size: 5vw;
     }
     .updateInput{
         width:20px;
         font-size: 2.3vw;
     }
     .updateStock{
-        font-size: 2.3vw;
+        font-size: 2.4vw;
         padding:5px 8px;
     }
     .addToCart{
         margin:0px 20px;
         padding:8px;
-        font-size: 3vw;
+        font-size: 4vw;
     }
     #specifications{
         margin:30px 5px 30px 0px;
         padding:5px;
-        font-size:3vw;
+        font-size:3.2vw;
     }
     #createReview input{
         min-height: 70px;
         margin:0px 10px;
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     #reviewbtn{
         margin: 20px 5px;

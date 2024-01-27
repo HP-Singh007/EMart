@@ -87,3 +87,28 @@
     width:80%;
     height:fit-content !important;
 }
+@media screen and (max-width:630px) {
+    #registerForm{
+        width:80%;
+        height:40%;
+        margin: 0px 10%;
+    }
+    .registerDiv{
+        width:80%;
+        margin:10px;
+        padding:5px 10px;
+    }
+    #registerForm input{
+        padding:0px 10px;
+        font-size: 3.5vw;
+    }
+    #forgetPassword>a{
+        font-size: 3vw;
+    }
+    #registerForm button{
+        width:65%;
+        padding:10px;
+        margin:10px;
+        font-size: 3vw;
+    }
+}

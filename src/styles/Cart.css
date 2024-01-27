@@ -70,3 +70,30 @@
     border:0px;
     border-radius: 10px;
 }
+
+@media screen and (max-width:630px) {
+    #cartMid{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: flex-start;
+        margin:10px 0px;
+    }
+    #cartCard{
+        width:90%;
+    }
+    #subtotal{
+        width:90%;
+        padding:10px 20px;
+        font-size: 3vw;
+        margin:10px 0px;
+    }
+    #subtotal p{
+        margin:5px;
+    }
+    #emptyCart{
+        width:90%;
+        height:70vh;
+        font-size: 5vw;
+    }
+
+}

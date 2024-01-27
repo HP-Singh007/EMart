@@ -1,0 +1,33 @@
+#contactPage{
+    width:100%;
+    min-height: 89vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: lavender;
+    padding:5%;
+}
+#contactLeft{
+    width:80%;
+}
+#contactRight{
+    width:20%;
+}
+#contactPage img{
+    width:200px;
+    border-radius: 20px;
+}
+@media screen and (max-width:630px) {
+    #contactPage{
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #contactPage h2{
+        font-size: 3vw;
+    }
+    #contactPage img{
+        width:50px;
+        border-radius: 10px;
+    }  
+}

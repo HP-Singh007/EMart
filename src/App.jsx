@@ -30,6 +30,7 @@ import EditProduct from "./components/Admin/EditProduct";
 import AllOrders from "./components/Admin/AllOrders";
 import AllUsers from "./components/Admin/AllUsers";
 import EditUser from "./components/Admin/EditUser";
+import ContactUs from "./pages/ContactUs";
 
 export function calculatePrice(price, discount) {
   return Math.round(price - (discount / 100) * price);
@@ -83,6 +84,7 @@ function App() {
       <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
+      <Route path="/contactus" element={<ContactUs />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/forgetpassword" element={<ForgetPassword />} />

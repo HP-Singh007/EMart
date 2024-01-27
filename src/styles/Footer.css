@@ -60,9 +60,7 @@ footer>div{
 }
 
 @media screen and (max-width:630px) {
-    footer{
-        height:400px;
-    }
+
     footer>div{
         padding:0vw 2vw 0px 1vw;
         margin:5px;

@@ -99,3 +99,37 @@
     color:green;
     font-weight: 500;
 }
+
+@media screen and (max-width:630px) {
+    #orderHeading{
+        width:92%;
+        margin:5px 4%;
+    }
+    #orderHeading>div{
+        font-size: 2vw;
+    }
+    #orderRoot{
+        padding:0px 10px;
+        font-size: 2vw;
+    }
+    #orderCollapse{
+       flex-direction:column-reverse ;
+    }
+    #orderCollapseLeft{
+        width:100%;
+        font-size: 2vw;
+        padding:5px;
+    }
+    #orderCollapseRight{
+        width:100%;
+        font-size: 2vw;
+        border: 0px;
+    }
+    #orderCollapseRight p{
+        margin:2px;
+    }
+    #orderCollapseProduct{
+       border-radius: 5px;
+    }
+
+}

@@ -1,5 +1,6 @@
 .productPage{
     background-color: lavender;
+    width:100%;
 }
 #productpagemid{
     display:flex;

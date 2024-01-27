@@ -97,3 +97,66 @@
     background-color: #0a0074ac;
     color:white;
 }
+@media screen and (max-width:630px) {
+    .dashSidebar{
+        width:22%;
+    }
+    .MuiTreeItem-content{
+        padding:1px !important;
+    }
+    .MuiTreeItem-label{
+        font-size: 2.5vw !important;
+        margin:15px 0px;
+        padding:0px !important;
+    }
+    .MuiSvgIcon-root{
+        font-size: 3.5vw !important;
+        padding:0px;
+    }
+    .MuiTreeItem-iconContainer{
+        margin: 2px !important;
+    }
+    .dashboardCardBlock{
+        flex-wrap: wrap;
+    }
+    .dashboardCard{
+        width:35%;
+        padding:15px 2px;
+        font-size: 3.5vw;
+        border-radius: 10px;
+        margin:5px;
+    }
+    .dashboardCard p{
+        margin:0px;
+    }
+    .dashboardCard svg{
+        font-size: 6vw !important;
+    }
+    .dashboardCard span{
+        font-size: 4vw;
+    }
+    #dash3 span{
+        font-size: 3vw !important;
+    }
+    #dash4 span{
+        font-size: 3vw !important;
+    }
+    #chartBlock{
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    #barChart{
+        width:90%;
+        height:250px;
+    }
+    #pieChart{
+        width:70%;
+    }
+    #dashGrid{
+        margin-top: 20px;
+    }
+    .MuiDataGrid-cell,.MuiDataGrid-columnHeader{
+        font-size: 3vw;
+    }
+}

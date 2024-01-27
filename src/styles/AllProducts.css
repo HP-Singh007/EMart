@@ -28,3 +28,9 @@
     border:0px;
     background-color: rgba(230, 230, 250, 0.012);
 }
+@media screen and (max-width:630px) {
+    .adminMain{
+        width:78%;
+        padding:2px;
+    }
+}

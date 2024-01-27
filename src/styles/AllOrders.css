@@ -10,7 +10,7 @@
 #allOrdersBtn select{
     width:70%;
     height:100%;
-    margin:0;
+    margin:0 !important;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -26,4 +26,22 @@
 #allOrdersBtn>button{
     background-color: rgba(255, 255, 255, 0);
     border:0px;
+}
+@media screen and (max-width:630px) {
+    #allOrdersBtn div{
+        height: 20px;
+    }
+    #allOrdersBtn select{
+        font-size: 2vw;
+        padding:0;
+    }
+    #allOrdersBtn>button svg{
+        width: 5vw;
+    }
+    .AdminOrderHeading{
+        padding:2px !important;
+    }
+    .AdminOrderHeading>div{
+        font-size: 1.8vw !important;
+    }
 }

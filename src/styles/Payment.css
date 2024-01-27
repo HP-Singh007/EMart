@@ -35,3 +35,12 @@
 #paymentPage input:disabled{
     background-color: gray;
 }
+@media screen and (max-width:630px) {
+    #paymentPage form{
+        width:80%;
+        padding:10px;
+    }
+    #paymentPage input{
+        font-size: 3.2vw;
+    }
+}

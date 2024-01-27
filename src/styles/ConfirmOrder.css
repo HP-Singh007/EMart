@@ -48,3 +48,37 @@
 #totalRow{
     border-top: 1px solid black;
 }
+@media screen and (max-width:630px) {
+    #confirmOrderLeft{
+        width:60%;
+        padding:5px;
+        min-height: 90vh;
+        font-size: 2.2vw;
+    }
+    #confirmOrderLeft div{
+        margin-bottom:10px;
+    }
+    #confirmOrderLeft p{
+        margin:5px;
+    }
+    #confirmOrderRight{
+        width:40%;
+        padding:5px;
+    }
+    #confirmOrderRight table{
+        width:90%;
+        margin:5%;
+    }
+    #confirmOrderRight table td{
+        font-size: 2vw;
+    }
+    #confirmOrderRight a{
+        padding:5px 10px;
+        font-size: 2vw;
+        margin:2px auto;
+        border-radius: 5px;
+    }
+    .headingFont{
+        font-size: 4vw;
+    }
+}

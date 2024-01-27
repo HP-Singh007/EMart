@@ -89,3 +89,54 @@
     font-size: 1.2vw;
     border-radius: 20px;
 }
+
+@media screen and (max-width:630px) {
+    .userCard{
+        margin-top:60px;
+        width:90%;
+        padding:20px;
+        border-radius: 10px;
+        flex-direction: column;
+    }
+    .userCardLeft{
+        width:100%;
+    }
+    .userCardLeft img{
+        width:80px;
+        height:80px;
+        display: block;
+        object-fit: cover;
+        border-radius: 1000px;
+        margin:0px auto;
+    }
+    .userCardRight{
+        margin-top:10px;
+        font-size: 4vw;
+        width:100%;
+    }
+    .userPage button{
+        margin:10px 0px;
+        padding:5px;
+        border-radius: 10px;
+    }
+    #UserBtn{
+        margin:10px;
+        justify-content: space-around;
+    }
+    .userCardRight a{
+        margin:5px;
+        padding:5px;
+        font-size: 2.5vw;
+        border-radius: 5px;
+    }
+    #updateAvatar{
+        margin:10px 0px;
+    }
+    #updateAvatar img{
+        width:12%;
+    }
+    #updateAvatar input{
+        width:80%;
+        font-size: 2vw;
+    }
+}

@@ -31,3 +31,23 @@
     align-items: center;
     justify-content: center;
 }
+@media screen and (max-width:630px) {
+    #orderItem{
+        height:80px;
+    }
+    #orderItemImg{
+        padding:2px;
+    }
+    #orderItemName{
+        padding:5px 0px;
+    }
+    #orderItemName p{
+        font-size: 1.5vw ;
+    }
+    #orderItemName p b{
+        font-size: 2vw ;
+    }
+    #orderItemQuantity{
+        font-size: 1.8vw;
+    }
+}
