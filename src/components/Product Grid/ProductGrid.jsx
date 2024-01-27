@@ -7,10 +7,9 @@ import Pagination from 'react-bootstrap/Pagination';
 import Searchbox from './Searchbox'
 import notFound from '../../images/404.png'
 
-const ProductGrid = ({setCategory,category,rating,Uprice,Lprice}) => {
+const ProductGrid = ({setCategory,category,rating,Uprice,Lprice,page,setPage}) => {
   const [products,setProducts] = useState([]);
   const [pages,setPages] = useState(1);
-  const [page,setPage] = useState(1);
   const [keyword,setKeyword] = useState('');
   const [Item,setItem]=useState([]);
   const {setIsLoading} = useContext(Context);
@@ -87,6 +86,11 @@ const ProductGrid = ({setCategory,category,rating,Uprice,Lprice}) => {
           <div id='emptyGrid'>
             <img src={notFound} alt="Not Found" />
             <p>No Matching Product Found</p>
+            <Pagination id='pagination' size='lg'>{
+              Item.map((i)=>{
+                return <Pagination.Item key={i} onClick={()=>paginationHandler(i)} active={i===page}>{i}</Pagination.Item>
+              })
+            }</Pagination> 
           </div>
         )
       }

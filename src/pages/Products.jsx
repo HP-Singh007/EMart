@@ -15,6 +15,7 @@ import { BedDouble, CookingPot, Laptop, LayoutList, Shirt, Smartphone } from "lu
 const Products = () => {
   const [topDeals, setTopDeals] = useState([]);
   const [rating,setRating] = useState(0);
+  const [page,setPage] = useState(1);
   const [cat,setCat] = useState('All');
   const [Lprice,setLPrice] = useState(0);
   const [Uprice,setUPrice] = useState(150000);
@@ -116,12 +117,12 @@ const Products = () => {
       <Heading heading={"Categories"} />
       <div id="categoryList">
         {category.map((i) => {
-          return <CategoryCard name={i.name} image={i.image} setCategory={setCat} category={cat}/>;
+          return <CategoryCard name={i.name} image={i.image} setCategory={setCat} category={cat} setPage={setPage}/>;
         })}
       </div>
       <div id="productpagemid">
         <Sidebar {...sidebarObj} />
-        <ProductGrid category={cat} rating={rating} Lprice={Lprice} Uprice={Uprice} setCategory={setCat}/>
+        <ProductGrid category={cat} rating={rating} Lprice={Lprice} Uprice={Uprice} setCategory={setCat} page={page} setPage={setPage}/>
       </div>
       <Footer />
     </div>

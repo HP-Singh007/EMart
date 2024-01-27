@@ -5,6 +5,7 @@ const CategoryCard = (props) => {
 
   const CategoryHandler=(name)=>{
     props.setCategory(name);
+    props.setPage(1);
   }
 
   return (
