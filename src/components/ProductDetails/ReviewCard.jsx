@@ -8,7 +8,7 @@ import {Context, server} from '../../index'
 import axios from "axios";
 import { useParams } from "react-router-dom";
 
-const ReviewCard = ({ Rid, name, rating, comment, setIsReview, avatar }) => {
+const ReviewCard = ({ Rid, name, rating, comment, setIsReview, user }) => {
 
   const {id} = useParams();
   const {isAdmin} = useContext(Context);
@@ -39,7 +39,7 @@ const ReviewCard = ({ Rid, name, rating, comment, setIsReview, avatar }) => {
   return (
     <div id="reviewCard">
       <div id="reviewCardLeft">
-        {avatar?<img src={`${avatar.url}`} alt='avatar'/>:<img src={profile} alt='profile'></img>}
+        {user?<img src={`${user.avatar.url}`} alt='avatar'/>:<img src={profile} alt='profile'></img>}
         <p>{name}</p>
       </div>
       <div id="reviewCardRight">

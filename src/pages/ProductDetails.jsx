@@ -237,7 +237,7 @@ const ProductDetails = () => {
                   comment={i.comment}
                   Rid={i._id}
                   setIsReview={setIsReview}
-                  avatar={i.avatar}
+                  user={i.user}
                 />
               );
             })}
