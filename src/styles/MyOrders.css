@@ -101,6 +101,9 @@
 }
 
 @media screen and (max-width:630px) {
+    #myOrdersPage{
+        min-height: 100vh;
+    }
     #orderHeading{
         width:100%;
         margin:5px 0%;

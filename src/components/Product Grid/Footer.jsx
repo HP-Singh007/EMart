@@ -4,7 +4,7 @@ import social from '../../images/social.png'
 import '../../styles/Footer.css'
 
 const Footer = () => {
-  const category=['Grocery','Mobile','Electronics','Appliances','Fashion','Furniture'];
+  const category=['Mobile','Electronics','Men Wear','Women Wear','Kitchenware','Furniture'];
 
   return (
     <footer>
