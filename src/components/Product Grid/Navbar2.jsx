@@ -33,7 +33,7 @@ const Navbar2 = () => {
       <div className="navcomp2" id="midnavcomp2">
         <Link to="/home">HOME</Link>
         <Link to="/products">PRODUCTS</Link>
-        <Link to="/contactus">CONTACT US</Link>
+        <Link to="/aboutus">ABOUT US</Link>
       </div>
 
       <div className="navcomp2" id="rightnavcomp2">

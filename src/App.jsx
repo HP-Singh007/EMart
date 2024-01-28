@@ -84,7 +84,7 @@ function App() {
       <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
-      <Route path="/contactus" element={<ContactUs />} />
+      <Route path="/aboutus" element={<ContactUs />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
       <Route path="/forgetpassword" element={<ForgetPassword />} />

@@ -5,17 +5,32 @@
     align-items: flex-start;
     justify-content: center;
     background-color: lavender;
-    padding:5%;
+    padding:0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.contactHeading{
+    font-size: 3vw;
+    color:teal;
+    margin:30px 0px 10px 0px;
 }
 #contactLeft{
-    width:80%;
+    width:78%;
+    padding:20px 80px;
+    text-align: justify;
+    font-size: 1.5vw;
 }
 #contactRight{
-    width:20%;
+    width:22%;
+    padding-top: 20px;
 }
 #contactPage img{
-    width:200px;
+    width:50%;
+    margin: 20px auto;
+    display: block;
     border-radius: 20px;
+}
+#contactRight h6{
+    padding:2px 0px;
 }
 @media screen and (max-width:630px) {
     #contactPage{
@@ -24,11 +39,25 @@
         align-items: center;
         min-height: 100vh;
     }
-    #contactPage h2{
+    .contactHeading{
+        font-size: 6vw;
+        margin:30px 0px 10px 0px;
+    }
+    #contactLeft{
+        width:90%;
+        padding:0px 10px;
         font-size: 3vw;
     }
+    #contactRight{
+        width:90%;
+        padding-top: 10px;
+    }
+    #contactPage h6{
+        font-size: 3vw;
+        padding:0px;
+    }
     #contactPage img{
-        width:50px;
+        width:70px;
         border-radius: 10px;
     }  
 }
