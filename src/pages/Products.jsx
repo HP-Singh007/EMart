@@ -46,13 +46,13 @@ const Products = () => {
       icon:<CookingPot />
     },
     {
-      name: "Men Wear",
+      name: "Men",
       image:
         "https://img.freepik.com/free-photo/portrait-young-businessman_144627-21852.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1704672000&semt=ais",
       icon:<Shirt />
     },
     {
-      name: "Women Wear",
+      name: "Women",
       image:
         "https://www.freestock.com/450/freestock_10712254.jpg",
       icon:<Shirt />

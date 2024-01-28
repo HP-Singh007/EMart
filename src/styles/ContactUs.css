@@ -22,6 +22,7 @@
         flex-direction: column-reverse;
         justify-content: flex-end;
         align-items: center;
+        min-height: 100vh;
     }
     #contactPage h2{
         font-size: 3vw;

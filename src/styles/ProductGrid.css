@@ -45,4 +45,11 @@
         font-size: 3vw;
         padding:10px;
     }
+    #emptyGrid img{
+        width:50%;
+    }
+    #emptyGrid p{
+        font-size:3vw;
+        margin-bottom:70px;
+    }
 }

@@ -91,6 +91,9 @@
 }
 
 @media screen and (max-width:630px) {
+    .userPage{
+        min-height: 100vh;
+    }
     .userCard{
         margin-top:60px;
         width:90%;

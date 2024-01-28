@@ -51,5 +51,13 @@
     #reviewCardRight p{
         font-size: 3vw;
     }
+    #reviewCardDel{
+        width:5%;
+        padding:0px;
+    }
+    #reviewCardDel svg{
+        width:90%;
+        margin-right:10px;
+    }
     
 }

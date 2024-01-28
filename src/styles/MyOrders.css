@@ -102,14 +102,14 @@
 
 @media screen and (max-width:630px) {
     #orderHeading{
-        width:92%;
-        margin:5px 4%;
+        width:100%;
+        margin:5px 0%;
     }
     #orderHeading>div{
         font-size: 2vw;
     }
     #orderRoot{
-        padding:0px 10px;
+        padding:5px;
         font-size: 2vw;
     }
     #orderCollapse{

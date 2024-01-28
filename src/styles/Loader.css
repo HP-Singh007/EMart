@@ -18,23 +18,23 @@
   @keyframes ring {
     0%{
         transform: rotate(0deg);
-        box-shadow: 1px 3px 4px teal;
+        box-shadow: 1px 3px 2px teal;
     }
     25%{
         transform: rotate(90deg);
-        box-shadow: 1px 3px 4px rgb(0, 86, 86);
+        box-shadow: 1px 3px 2px rgb(0, 86, 86);
     }
     50%{
         transform: rotate(180deg);
-        box-shadow: 1px 3px 4px rgb(0, 85, 85);
+        box-shadow: 1px 3px 2px rgb(0, 85, 85);
     }
     75%{
         transform: rotate(270deg);
-        box-shadow: 1px 3px 4px rgb(0, 164, 164);
+        box-shadow: 1px 3px 2px rgb(0, 164, 164);
     }
     100%{
         transform: rotate(360deg);
-        box-shadow: 1px 3px 4px teal;
+        box-shadow: 1px 3px 2px teal;
     }
   }
 
