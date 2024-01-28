@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import avatar from "../../images/avatar.png";
+import profile from "../../images/avatar.png";
 import "../../styles/ReviewCard.css";
 import { Rating } from "react-simple-star-rating";
 import { Trash2 } from "lucide-react";
@@ -8,7 +8,7 @@ import {Context, server} from '../../index'
 import axios from "axios";
 import { useParams } from "react-router-dom";
 
-const ReviewCard = ({ Rid, name, rating, comment, setIsReview }) => {
+const ReviewCard = ({ Rid, name, rating, comment, setIsReview, avatar }) => {
 
   const {id} = useParams();
   const {isAdmin} = useContext(Context);
@@ -39,7 +39,7 @@ const ReviewCard = ({ Rid, name, rating, comment, setIsReview }) => {
   return (
     <div id="reviewCard">
       <div id="reviewCardLeft">
-        <img src={avatar} alt="avatar" />
+        {avatar?<img src={`${avatar.url}`} alt='avatar'/>:<img src={profile} alt='profile'></img>}
         <p>{name}</p>
       </div>
       <div id="reviewCardRight">

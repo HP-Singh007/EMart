@@ -10,7 +10,14 @@
     align-items: center;
     justify-content: center;
     background-color:rgba(190, 190, 252, 0.777);
-    padding:20px;
+    padding:10px;
+}
+#reviewCardLeft img{
+    width:50px;
+    height:50px;
+    object-fit: cover;
+    margin:10px;
+    border-radius: 1000px;
 }
 #reviewCardLeft p{
     color: gray;
@@ -42,7 +49,11 @@
         font-size: 2.5vw;
     }
     #reviewCardLeft img{
-        width:50%;
+        width:30px;
+        height:30px;
+        object-fit: cover;
+        margin:5px;
+        border-radius: 1000px;
     }
     #reviewCardRight{
         padding: 10px;

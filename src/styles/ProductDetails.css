@@ -227,6 +227,9 @@ input[type=number] {
         padding:5px;
         font-size:3.2vw;
     }
+    #reviewInfo{
+        padding:5px;
+    }
     #createReview input{
         min-height: 70px;
         margin:0px 10px;
