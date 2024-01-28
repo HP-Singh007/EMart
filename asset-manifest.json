@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/EMart/static/css/main.869b2437.css",
-    "main.js": "/EMart/static/js/main.1093e111.js",
+    "main.css": "/EMart/static/css/main.a06e9fa7.css",
+    "main.js": "/EMart/static/js/main.d82826f3.js",
     "static/media/profile.jpg": "/EMart/static/media/profile.c2c0c854be944bd8108a.jpg",
     "static/media/bg3.jpg": "/EMart/static/media/bg3.56de5c386ef50968fc58.jpg",
     "static/media/bg.jpg": "/EMart/static/media/bg.31813b3b63de017d8fad.jpg",
@@ -10,11 +10,11 @@
     "static/media/logo1.png": "/EMart/static/media/logo1.27c35ed7f33c12772734.png",
     "static/media/logo2.png": "/EMart/static/media/logo2.d85a72fbf0bfffc357e3.png",
     "index.html": "/EMart/index.html",
-    "main.869b2437.css.map": "/EMart/static/css/main.869b2437.css.map",
-    "main.1093e111.js.map": "/EMart/static/js/main.1093e111.js.map"
+    "main.a06e9fa7.css.map": "/EMart/static/css/main.a06e9fa7.css.map",
+    "main.d82826f3.js.map": "/EMart/static/js/main.d82826f3.js.map"
   },
   "entrypoints": [
-    "static/css/main.869b2437.css",
-    "static/js/main.1093e111.js"
+    "static/css/main.a06e9fa7.css",
+    "static/js/main.d82826f3.js"
   ]
 }
