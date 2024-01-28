@@ -94,7 +94,7 @@
     background-color: rgba(53, 162, 235, 0.164);
 }
 #dashGrid .css-yrdy0g-MuiDataGrid-columnHeaderRow{
-    background-color: #0a0074ac;
+    background-color: #0a0074ac !important;
     color:white;
 }
 
@@ -148,8 +148,9 @@
         padding-top: 20px;
     }
     #barChart{
-        width:90%;
+        width:80%;
         height:250px;
+        display: none;
     }
     #pieChart{
         width:70%;
