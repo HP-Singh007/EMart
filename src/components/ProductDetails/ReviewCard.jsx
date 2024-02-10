@@ -27,7 +27,6 @@ const ReviewCard = ({ Rid, name, rating, comment, setIsReview, user }) => {
           reviewId:Rid
         }
       })
-
       toast.success(data.message);
       setIsReview((val)=>!val);
     }

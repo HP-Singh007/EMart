@@ -18,7 +18,6 @@ const updateProfileHandler=async(e)=>{
     e.preventDefault();
     try{
         setIsLoading(true);
-        console.log(newAvatar);
         const {data} = await axios.put(`${server}/users/me/update`,{
             name,
             email,
