@@ -8,7 +8,7 @@ import {useNavigate} from 'react-router-dom'
 
 const UpdateProfile = () => {
 const[user,setUser] = useState({});
-const[newAvatar,setNewAvatar] = useState('https://res.cloudinary.com/dnztpcflm/image/upload/v1705412415/avatars/euxs1a9hsusichmzcpzs.jpg');
+const[newAvatar,setNewAvatar] = useState("");
 const [name,setName] = useState('');
 const [email,setEmail] = useState('');
 const {setIsLoading,isLoading} = useContext(Context);
