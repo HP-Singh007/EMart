@@ -6,6 +6,7 @@ import { Trash2 } from "lucide-react";
 import toast from "react-hot-toast";
 import {Context, server} from '../../index'
 import axios from "axios";
+import { motion } from "framer-motion";
 import { useParams } from "react-router-dom";
 
 const ReviewCard = ({ Rid, name, rating, comment, setIsReview, user }) => {
@@ -36,7 +37,7 @@ const ReviewCard = ({ Rid, name, rating, comment, setIsReview, user }) => {
   }
 
   return (
-    <div id="reviewCard">
+    <motion.div id="reviewCard" initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.5,delay:0.2}}>
       <div id="reviewCardLeft">
         {user?<img src={`${user.avatar.url}`} alt='avatar'/>:<img src={profile} alt='profile'></img>}
         <p>{name}</p>
@@ -52,7 +53,7 @@ const ReviewCard = ({ Rid, name, rating, comment, setIsReview, user }) => {
           ):(<></>)
       }
       </div>
-    </div>
+    </motion.div>
   );
 };
 

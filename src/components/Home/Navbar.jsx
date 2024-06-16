@@ -5,6 +5,7 @@ import { Context, server } from "../../index";
 import "../../styles/Navbar.css";
 import axios from "axios";
 import { toast } from "react-hot-toast";
+import {motion} from "framer-motion"
 
 const Navbar = () => {
   const { isAuthenticated, setIsAuthenticated } = useContext(Context);
@@ -17,7 +18,7 @@ const Navbar = () => {
     setIsAuthenticated(false);
   };
   return (
-    <navbar>
+    <motion.navbar initial={{y:-100,opacity:0}} animate={{y:0,opacity:1}} transition={{duration:0.5,delay:0.5}} >
       <div className="navcomp" id="leftnavcomp">
         <img src={logo} alt="logo" />
       </div>
@@ -44,7 +45,7 @@ const Navbar = () => {
           </>
         )}
       </div>
-    </navbar>
+    </motion.navbar>
   );
 };
 

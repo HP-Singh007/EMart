@@ -4,6 +4,8 @@ import imagePlaceholder from "../../images/imagePlaceholder.jpg"
 import { Rating } from 'react-simple-star-rating'
 import { Link } from 'react-router-dom'
 import { calculatePrice } from '../../App'
+import { motion } from "framer-motion";
+
 
 const rating={
   readonly:true,
@@ -14,7 +16,7 @@ const rating={
 const ProductCard = (props) => {
   return (
     
-    <div id='productCard'>
+    <motion.div id='productCard' initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:1}}>
       <Link to={props.productId} className='links'>
         <img src={props.image?props.image:imagePlaceholder} alt="product" />
         <p id='name'>{props.name}</p>
@@ -23,7 +25,7 @@ const ProductCard = (props) => {
         <p id='price'>&#8377; {calculatePrice(props.price,props.discount)}</p>
         <p id='discount'>Discount : {props.discount}%</p>
       </Link>
-    </div>
+    </motion.div>
   )
 }
 
