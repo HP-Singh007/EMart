@@ -48,6 +48,9 @@
     #introLine{
         font-size: 4vw;
     }
+    #introLine span{
+        font-size: 4.2vw;
+    }
     #introLine p{
         width:65%;
     }

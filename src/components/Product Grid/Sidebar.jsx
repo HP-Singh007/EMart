@@ -1,7 +1,6 @@
 import React from 'react'
 import '../../styles/Sidebar.css'
 import { Slider } from '@mui/material'
-import { motion } from 'framer-motion'
 
 const Sidebar = ({rating,setRating,Lprice,setLPrice,Uprice,setUPrice,category,setCat}) => {
   const priceHandler=(e)=>{
@@ -12,7 +11,7 @@ const Sidebar = ({rating,setRating,Lprice,setLPrice,Uprice,setUPrice,category,se
     setCat(name);
   }
   return (
-    <motion.div className='sidebar' initial={{x:-100,opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:0.7,delay:0.2}}>
+    <div className='sidebar'>
       <h2>Filter</h2>
       <div id="ratingSidebar" className='side'>
         <p className='sideComp'>Rating : </p>
@@ -49,7 +48,7 @@ const Sidebar = ({rating,setRating,Lprice,setLPrice,Uprice,setUPrice,category,se
           }
         </ul>
       </div>
-    </motion.div>
+    </div>
   )
 }
 
