@@ -16,6 +16,20 @@
 #confirmOrderLeft div{
     margin-bottom:50px;
 }
+#confirmOrderLeftShippingInfo{
+    background-color: rgba(200, 216, 255, 0.727);
+    font-family:monospace;
+    padding:1vw 2vw;
+    border-radius: 100px;
+    border:1px solid teal;
+    color:green;
+}
+#confirmOrderLeftShippingInfo .headingFont{
+    color:black;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-stretch:extra-expanded;
+}
 #confirmOrderCartInfo{
     border-top: 1px solid rgb(174, 174, 255);
 }

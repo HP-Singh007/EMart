@@ -12,6 +12,8 @@ import Heading from "../components/Product Grid/Heading";
 import ReviewCard from "../components/ProductDetails/ReviewCard";
 import toast from "react-hot-toast";
 import Loader from "../components/Home/Loader";
+import Filter from "bad-words"
+import extraWords from "../badWords.json"
 
 const ProductDetails = () => {
   const{setIsLoading,isAuthenticated} = useContext(Context);
@@ -31,11 +33,14 @@ const ProductDetails = () => {
   const createReviewHandler = async (e) => {
     e.preventDefault();
     try {
+      const filter = new Filter();
+      filter.addWords(...extraWords);
+      const filterReview = filter.clean(newReview);
       const { data } = await axios.put(
         `${server}/products/review/${id}`,
         {
           rating: newRating,
-          comment: newReview,
+          comment: filterReview,
         },
         {
           headers: {
@@ -129,7 +134,7 @@ const ProductDetails = () => {
       <div id="upperHalfDetails">
 
         <div id="carousel">
-          <Carousel height={500}>
+          <Carousel height={500} indicators={false}>
             {product.images && product.images.length > 0 ? (
               product.images.map((item, i) => {
                 return (

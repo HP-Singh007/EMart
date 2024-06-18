@@ -25,11 +25,12 @@
     border-radius: 5px;
 }
 #subtotal{
-    background-color: white;
+    background-color: rgb(246, 248, 255);
     width:20%;
     padding:20px;
     font-size: 1.2vw;
     margin:10px 0px;
+    border-radius: 10px;
 }
 #subtotal a{
     padding:7px;

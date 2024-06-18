@@ -59,14 +59,14 @@ const ConfirmOrder = () => {
         <ComponentStepper activeStep={1}/>
         <div id="confirmOrderMid">
           <div id='confirmOrderLeft'>
-              <div>
-                  <p className='headingFont'>Shipping Info</p>
+              <div id="confirmOrderLeftShippingInfo">
+                  <p className='headingFont'>SHIPPING DETAILS</p>
                   <p><b>NAME : </b>{user.name}</p>
                   <p><b>PHONE : </b>{shippingInfo.phone}</p>
                   <p><b>ADDRESS : </b>{`${shippingInfo.address}, ${shippingInfo.city}, ${shippingInfo.state}, ${shippingInfo.country}`}</p>
               </div>
               <div id="confirmOrderCartInfo">
-                <p className='headingFont'>Order Items</p>
+                <p className='headingFont'>ORDER ITEMS</p>
                 {
                   cartInfo.map((item)=>{
                     return <OrderItem {...item}/>

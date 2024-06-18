@@ -3,6 +3,7 @@ import '../../styles/CartItem.css'
 import { calculatePrice } from '../../App';
 import imagePlaceholder from '../../images/imagePlaceholder.jpg'
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion'
 
 const CartItem = (props) => {
     const[quantity,setQuantity]= useState(props.quantity);
@@ -34,7 +35,7 @@ const CartItem = (props) => {
     },[quantity])
 
   return (
-    <div id='cartItem'>
+    <motion.div id='cartItem' initial={{x:-15,opacity:0}} whileInView={{x:0,opacity:1}} transition={{duration:0.5,delay:0.2}}>
         <div id="cartImg">
             {props.image?(
             <img src={props.image.url} alt="product" />
@@ -61,7 +62,7 @@ const CartItem = (props) => {
                 </div>
             </div>
         </div>   
-    </div>
+    </motion.div>
   )
 }
 
