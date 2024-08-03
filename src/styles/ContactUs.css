@@ -14,13 +14,16 @@
     margin:30px 0px 10px 0px;
 }
 #contactLeft{
-    width:78%;
-    padding:20px 80px;
+    width:72%;
+    padding:20px 50px 20px 40px;
     text-align: justify;
     font-size: 1.5vw;
 }
 #contactRight{
-    width:22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:28%;
     padding-top: 20px;
 }
 #contactPage img{
@@ -30,7 +33,52 @@
     border-radius: 20px;
 }
 #contactRight h6{
-    padding:2px 0px;
+    font-family:monospace;
+    text-align: center;
+    color: red;
+}
+#contactRight form{
+    background-color:rgba(0, 97, 97, 0.844);
+    border-radius: 20px;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:95%;
+    padding:20px 2px;
+    margin-top:30px;
+}
+#contactRight div{
+    width:100%;
+    padding:10px 5px;
+
+}
+#contactRight form p{
+    font-size: 1.5vw;
+    font-stretch: expanded;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#contactRight form label{
+    width:15%;
+}
+#contactRight form input{
+    width:85%;
+    border-radius: 10px;
+    border: 0px;
+    padding:0.5vw;
+}
+#contactRight form textarea{
+    border-radius: 10px;
+    border: 0px;
+    height:8vw;
+}
+#contactRight #feedbackBtn{
+    background-color: rgb(101, 0, 190);
+    border:1px solid white;
+    color: white;
+}
+#contactRight #feedbackBtn:hover{
+    background-color: rgb(48, 0, 91);
 }
 @media screen and (max-width:630px) {
     #contactPage{
@@ -52,12 +100,32 @@
         width:90%;
         padding-top: 10px;
     }
+    #contactRight form{
+        width:95%;
+        margin-top:20px;
+    }
+    #contactRight form p{
+        font-size: 6vw;
+    }
+    #contactRight form label{
+        width:20%;
+        padding:2%;
+    }
+    #contactRight form input{
+        width:80%;
+        padding:1vw;
+    }
+    #contactRight form textarea{
+        height:20vw;
+    }
     #contactPage h6{
-        font-size: 3vw;
+        font-size: 4vw;
         padding:0px;
     }
     #contactPage img{
-        width:70px;
-        border-radius: 10px;
+        width:40vw;
+        height:50vw;
+        background-size:cover;
+        border-radius: 100%;
     }  
 }

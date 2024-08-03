@@ -1,10 +1,31 @@
-import React from "react";
+import React, { useRef } from "react";
 import Navbar2 from "../components/Product Grid/Navbar2";
 import "../styles/ContactUs.css";
 import profile from "../images/profile.jpg";
 import { motion } from "framer-motion";
+import emailjs from '@emailjs/browser';
+import toast from "react-hot-toast"
 
 const ContactUs = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_a3frb4l', 'template_rqu02jm', form.current, {
+        publicKey: 'iwUd_v1tlx_6leUNs',
+      })
+      .then(
+        () => {
+          toast.success('Message Sent Successfully!');
+        },
+        (error) => {
+          toast.error('Some Error Occured : ' + error.text);
+        },
+      );
+      e.target.reset();
+  };
+
   return (
     <>
       <Navbar2 />
@@ -42,8 +63,24 @@ const ContactUs = () => {
         </div>
         <div id="contactRight">
           <img src={profile} alt="profile" />
-          <h6>Name : Harmanpreet Singh</h6>
-          <h6>Email : ecommerceshopifycse@gmail.com</h6>
+          <h6>HARMANPREET SINGH</h6>
+          <h6>ecommerceshopifycse@gmail.com</h6>
+          <motion.form ref={form} onSubmit={sendEmail} initial={{opacity:0,x:100}} whileInView={{opacity:1,x:0}} transition={{duration:0.7,delay:0.7}}>
+            <p>FEEDBACK</p>
+            <div>
+              <label>Name</label>
+              <input type="text" name="user_name" placeholder="Your Name Here" required/>
+            </div>
+            <div>
+              <label>Email</label>
+              <input type="email" name="user_email" placeholder="example@abc.com" required/>
+            </div>
+            <div>
+              <label>Message</label>
+              <textarea name="message" required />
+            </div>
+            <input type="submit" value="Send"  id="feedbackBtn"/>
+          </motion.form>
         </div>
       </div>
     </>

@@ -18,3 +18,6 @@ body{
 .warning{
     color:red;
 }
+::-webkit-scrollbar {
+    display: none;
+  }

@@ -38,24 +38,27 @@ export function calculatePrice(price, discount) {
 
 function App() {
   const { setIsAuthenticated, setIsLoading, setUser, isAuthenticated,setIsAdmin,isAdmin} = useContext(Context);
-  const [stripeApiKey,setStripeApiKey] = useState("");
+  const [stripeApiKey,setStripeApiKey] = useState("samplekey");
 
   const getApiKey=async()=>{          
-  try{
-    const {data} = await axios.get(`${server}/payment/getkey`,{withCredentials:true})
-    setStripeApiKey(data.api_key);
-  }
-  catch(err){
-    console.log(err);
-  }
+    try{
+      const {data} = await axios.get(`${server}/payment/getkey`,{withCredentials:true});
+      setStripeApiKey(data.api_key);
+    }
+    catch(err){
+      console.log(err);
+    }
   }
 
   useEffect(()=>{
-    getApiKey();
-  },[])
+      getApiKey();
+  },[isAuthenticated])
 
   useEffect(() => {
     setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 10000);
     axios.get(`${server}/users/me`, {
         withCredentials: true,
       })
@@ -106,11 +109,11 @@ function App() {
       <Route path="/admin/users/edit/:id" element={isAdmin?<EditUser />:<Login/>} />
       <Route path="/order/confirm" element={<ConfirmOrder />} />
       <Route path="/payment/success" element={<OrderSuccess />} />
-      <Route path="/order/payment" element={
+      <Route path="/order/payment" element={isAuthenticated?
         <Elements stripe={loadStripe(stripeApiKey)}>
           <Payment/>
         </Elements>
-      } />
+      :<Login/>} />
     </Routes>
     <Toaster />
     </Router>
