@@ -14,7 +14,7 @@ import ResetPassword from "./pages/ResetPassword";
 import UserDetails from "./pages/UserDetails";
 import UpdateProfile from "./pages/UpdateProfile";
 import ChangePassword from "./pages/ChangePassword";
-import Loader from './components/Home/Loader'
+import Loader from "./components/Home/Loader";
 import Cart from "./pages/Cart";
 import Order from "./pages/Order";
 import ConfirmOrder from "./pages/ConfirmOrder";
@@ -31,44 +31,60 @@ import AllOrders from "./components/Admin/AllOrders";
 import AllUsers from "./components/Admin/AllUsers";
 import EditUser from "./components/Admin/EditUser";
 import ContactUs from "./pages/ContactUs";
+import facts from "./facts.json";
 
 export function calculatePrice(price, discount) {
   return Math.round(price - (discount / 100) * price);
 }
 
 function App() {
-  const { setIsAuthenticated, setIsLoading, setUser, isAuthenticated,setIsAdmin,isAdmin} = useContext(Context);
-  const [stripeApiKey,setStripeApiKey] = useState("samplekey");
+  const {
+    setIsAuthenticated,
+    setIsLoading,
+    setUser,
+    isAuthenticated,
+    setIsAdmin,
+    isAdmin,
+    setFact
+  } = useContext(Context);
+  const [stripeApiKey, setStripeApiKey] = useState("samplekey");
 
-  const getApiKey=async()=>{          
-    try{
-      const {data} = await axios.get(`${server}/payment/getkey`,{withCredentials:true});
+  const getApiKey = async () => {
+    try {
+      const { data } = await axios.get(`${server}/payment/getkey`, {
+        withCredentials: true,
+      });
       setStripeApiKey(data.api_key);
-    }
-    catch(err){
+    } catch (err) {
       console.log(err);
     }
-  }
+  };
 
-  useEffect(()=>{
-      getApiKey();
-  },[isAuthenticated])
+  useEffect(() => {
+    getApiKey();
+  }, [isAuthenticated]);
 
   useEffect(() => {
     setIsLoading(true);
+    const random = Math.floor(Math.random() * facts.length);
+    setTimeout(() => {
+      setFact("Do You Know : " + facts[random]);
+    }, 5000);
     setTimeout(() => {
       setIsLoading(false);
-    }, 1000*60);
-    axios.get(`${server}/users/me`, {
+    }, 1000 * 60);
+    axios
+      .get(`${server}/users/me`, {
         withCredentials: true,
       })
       .then((res) => {
         setUser(res.data);
-        if(res.data.role==='Admin'){
+        if (res.data.role === "Admin") {
           setIsAdmin(true);
         }
         setTimeout(() => {
           setIsLoading(false);
+          setFact("");
         }, 1000);
         setIsAuthenticated(true);
       })
@@ -76,46 +92,75 @@ function App() {
         console.log(error);
         setTimeout(() => {
           setIsLoading(false);
+          setFact("");
         }, 1000);
         setIsAuthenticated(false);
       });
-  },[isAuthenticated]);
+  }, [isAuthenticated]);
 
   return (
     <Router basename="/EMart">
-      <Loader/>
+      <Loader />
       <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/aboutus" element={<ContactUs />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/register" element={<Register />} />
-      <Route path="/forgetpassword" element={<ForgetPassword />} />
-      <Route path={"/users/password/reset/:id"} element={<ResetPassword/>}/>
-      <Route path="/products" element={<Products />} />
-      <Route path="/products/:id" element={<ProductDetails />} />
-      <Route path="/me" element={<UserDetails />} />
-      <Route path="/me/update" element={<UpdateProfile />} />
-      <Route path="/me/changepassword" element={<ChangePassword />} />
-      <Route path="/cart" element={<Cart />} />
-      <Route path="/order" element={<Order />} />
-      <Route path="/orders" element={<MyOrders />} />
-      <Route path="/admin/dashboard" element={isAdmin?<Dashboard />:<Login/>} />
-      <Route path="/admin/products/all" element={isAdmin?<AllProducts />:<Login/>} />
-      <Route path="/admin/products/create" element={isAdmin?<CreateProduct />:<Login/>} />
-      <Route path="/admin/products/edit/:id" element={isAdmin?<EditProduct />:<Login/>} />
-      <Route path="/admin/orders" element={isAdmin?<AllOrders />:<Login/>} />
-      <Route path="/admin/users" element={isAdmin?<AllUsers />:<Login/>} />
-      <Route path="/admin/users/edit/:id" element={isAdmin?<EditUser />:<Login/>} />
-      <Route path="/order/confirm" element={<ConfirmOrder />} />
-      <Route path="/payment/success" element={<OrderSuccess />} />
-      <Route path="/order/payment" element={isAuthenticated?
-        <Elements stripe={loadStripe(stripeApiKey)}>
-          <Payment/>
-        </Elements>
-      :<Login/>} />
-    </Routes>
-    <Toaster />
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/aboutus" element={<ContactUs />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/forgetpassword" element={<ForgetPassword />} />
+        <Route path={"/users/password/reset/:id"} element={<ResetPassword />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/products/:id" element={<ProductDetails />} />
+        <Route path="/me" element={<UserDetails />} />
+        <Route path="/me/update" element={<UpdateProfile />} />
+        <Route path="/me/changepassword" element={<ChangePassword />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/order" element={<Order />} />
+        <Route path="/orders" element={<MyOrders />} />
+        <Route
+          path="/admin/dashboard"
+          element={isAdmin ? <Dashboard /> : <Login />}
+        />
+        <Route
+          path="/admin/products/all"
+          element={isAdmin ? <AllProducts /> : <Login />}
+        />
+        <Route
+          path="/admin/products/create"
+          element={isAdmin ? <CreateProduct /> : <Login />}
+        />
+        <Route
+          path="/admin/products/edit/:id"
+          element={isAdmin ? <EditProduct /> : <Login />}
+        />
+        <Route
+          path="/admin/orders"
+          element={isAdmin ? <AllOrders /> : <Login />}
+        />
+        <Route
+          path="/admin/users"
+          element={isAdmin ? <AllUsers /> : <Login />}
+        />
+        <Route
+          path="/admin/users/edit/:id"
+          element={isAdmin ? <EditUser /> : <Login />}
+        />
+        <Route path="/order/confirm" element={<ConfirmOrder />} />
+        <Route path="/payment/success" element={<OrderSuccess />} />
+        <Route
+          path="/order/payment"
+          element={
+            isAuthenticated ? (
+              <Elements stripe={loadStripe(stripeApiKey)}>
+                <Payment />
+              </Elements>
+            ) : (
+              <Login />
+            )
+          }
+        />
+      </Routes>
+      <Toaster />
     </Router>
   );
 }

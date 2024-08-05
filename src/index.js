@@ -12,6 +12,7 @@ const AppWrapper = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false); 
   const [isAdmin, setIsAdmin] = useState(false); 
   const [isLoading, setIsLoading] = useState(false);
+  const [fact,setFact] = useState("");
   const [user, setUser] = useState({});
 
   return (
@@ -25,6 +26,8 @@ const AppWrapper = () => {
         setUser,
         isAdmin,
         setIsAdmin,
+        fact,
+        setFact
       }}
     >
       <App />
