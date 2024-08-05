@@ -16,13 +16,54 @@
     margin:1.5vw;
     font-family: sans-serif;
 }
+#animatedCart{
+    width:50%;
+    overflow: hidden;
+    margin-bottom:1vw;
+}
+#animatedCart img{
+    width:10%;
+    position:relative;
+    animation: cart 5s ease-in-out 0s infinite forwards;
+}
+@keyframes cart {
+    0%{
+        left:0%;
+        transform: scaleX(1);
+        opacity:0;
+    }
+    25%{
+        opacity:1;
+    }
+    49.9%{
+        left:95%;
+        transform: scaleX(1);
+        opacity:0;
+    }
+    50%{
+        left:100%;
+        transform: scaleX(-1);
+        opacity:0;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        left:0%;
+        transform: scaleX(-1);
+        opacity:0;
+    }
+
+}
 #ring{
     width:100px;
     height:100px;
+    margin:2.5vw;
     border-radius: 50%;
     animation: ring 1s linear 0s infinite forwards normal;
     transition: all 0.5s;
   }
+
   @keyframes ring {
     0%{
         transform: rotate(0deg);
@@ -47,10 +88,16 @@
   }
 
   @media screen and (max-width:630px) {
-      #fact{
+    #fact{
         font-size: 5vw !important;
         margin:1.5vw;
         padding:1.5vw;
         text-align: center;
-        }
+    }
+    #animatedCart{
+        width:80%;
+    }
+    #animatedCart img{
+        width:30%;
+    }
   }
