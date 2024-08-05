@@ -46,34 +46,11 @@
     }
   }
 
-  @media screen and (max-width) {
-    #ring{
-        width:50px;
-        height:50px;
-        border-radius: 50%;
-        animation: ring 1s linear 0s infinite forwards normal;
-        transition: all 0.5s;
-      }
-    @keyframes ring {
-        0%{
-            transform: rotate(0deg);
-            box-shadow: 1px 2px 1px teal;
+  @media screen and (max-width:630px) {
+      #fact{
+        font-size: 5vw !important;
+        margin:1.5vw;
+        padding:1.5vw;
+        text-align: center;
         }
-        25%{
-            transform: rotate(90deg);
-            box-shadow: 1px 2px 1px rgb(0, 86, 86);
-        }
-        50%{
-            transform: rotate(180deg);
-            box-shadow: 1px 2px 1px rgb(0, 85, 85);
-        }
-        75%{
-            transform: rotate(270deg);
-            box-shadow: 1px 2px 1px rgb(0, 164, 164);
-        }
-        100%{
-            transform: rotate(360deg);
-            box-shadow: 1px 2px 1px teal;
-        }
-      }
   }

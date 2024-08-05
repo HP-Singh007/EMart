@@ -8,7 +8,7 @@ const Loader = () => {
     const [fact,setFact] = useState("");
 
     useEffect(()=>{
-      const random = Math.floor(Math.random() * facts.length-1);
+      const random = Math.floor(Math.random() * facts.length);
       if(isLoading){
         setTimeout(() => {
           setFact("Do You Know : "+facts[random]);
