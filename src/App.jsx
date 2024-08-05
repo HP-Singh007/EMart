@@ -67,7 +67,9 @@ function App() {
   useEffect(() => {
     setIsLoading(true);
     const random = Math.floor(Math.random() * facts.length);
-    setFact("Do You Know : " + facts[random]);
+    setTimeout(() => {
+      setFact("Do You Know : " + facts[random]);
+    }, 5000);
     setTimeout(() => {
       setIsLoading(false);
     }, 1000 * 60);
@@ -82,16 +84,20 @@ function App() {
         }
         setTimeout(() => {
           setIsLoading(false);
-          setFact("");
         }, 1000);
+        setTimeout(()=>{
+          setFact("");
+        },5001)
         setIsAuthenticated(true);
       })
       .catch((error) => {
         console.log(error);
         setTimeout(() => {
           setIsLoading(false);
-          setFact("");
         }, 1000);
+        setTimeout(()=>{
+          setFact("");
+        },5001)
         setIsAuthenticated(false);
       });
   }, [isAuthenticated]);
