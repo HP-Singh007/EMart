@@ -58,7 +58,7 @@ function App() {
     setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
-    }, 10000);
+    }, 1000*60);
     axios.get(`${server}/users/me`, {
         withCredentials: true,
       })

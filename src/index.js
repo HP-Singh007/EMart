@@ -24,7 +24,7 @@ const AppWrapper = () => {
         user,
         setUser,
         isAdmin,
-        setIsAdmin
+        setIsAdmin,
       }}
     >
       <App />

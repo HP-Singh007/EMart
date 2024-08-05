@@ -97,7 +97,7 @@ const Products = () => {
 
   return (
     <div className="productPage">
-      <Loader/>
+      {/* <Loader/> */}
       <Navbar2 />
       <Heading heading={"TOP DEALS"} />
       <div id="topdeals">
