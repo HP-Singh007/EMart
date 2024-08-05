@@ -67,9 +67,7 @@ function App() {
   useEffect(() => {
     setIsLoading(true);
     const random = Math.floor(Math.random() * facts.length);
-    setTimeout(() => {
-      setFact("Do You Know : " + facts[random]);
-    }, 5000);
+    setFact("Do You Know : " + facts[random]);
     setTimeout(() => {
       setIsLoading(false);
     }, 1000 * 60);
