@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 
 //server url
-export const server = "https://e-mart-lp43.onrender.com/api/v1";
+export const server = "https://e-martbackend-production.up.railway.app/api/v1";
 
 export const Context = createContext({});
 
